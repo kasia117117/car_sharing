@@ -1,0 +1,259 @@
+:root {
+    --main-color :#FF0000;
+}
+body {
+    font-family: "Nunito Sans", sans-serif;
+    margin: 0 auto;
+    color: white;
+    background-color: white;
+    height: 3008px;
+}
+
+.container {
+    max-width: 1088px;
+    margin: auto;
+}
+
+header {
+    top: -3px;
+    left: -3px;
+    width: 100%;
+    height: 93px;
+    background: #00000066 0% 0% no-repeat padding-box;
+    border: 2px solid #FFFFFF33;
+    opacity: 1;
+}
+
+.nav-menu {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 93px;
+}
+
+.logo {
+    width: 31px;
+    height: 35px;
+    margin-right: 10px;
+    display:flex;
+}
+.logo-text {
+    font-size: 35px;
+    font-family: "Nunito Sans";
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    display:flex;
+}
+
+.logo-text span{
+    font-size: 35px;
+    font-family: "Nunito Sans";
+    font-weight: 700;
+    color :var(--main-color);
+    margin-right: 5px;
+}
+
+.menu-list {
+    display:flex;
+    justify-content: flex-end;
+
+
+}
+
+.menu-element {
+    font-size: 16px;
+    font-family: "Nunito Sans";
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 75px;
+}
+
+.banner {
+    width:100%;
+    height: 807px;
+    background-image: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%),  url(../images/Image.png);
+    background-position: center;
+    background-size: cover;
+    position:absolute;
+    top: 0;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.banner-title {
+    font-size: 90px;
+    font-weight: 900;
+    text-transform: uppercase;
+
+}
+
+.banner-text {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.share-btn {
+    background-color:var(--main-color);
+    color:white;
+    border-radius: 40px;
+    padding: 22px 55px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: 0px 3px 6px #FF00004D;
+    margin-right: 25px;
+}
+.features-btn {
+    background-color:white;
+    color:var(--main-color);
+    border-radius: 40px;
+    padding: 22px 55px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: 0px 3px 6px #FF00004D;
+}
+
+.blog {
+    margin-top: 807px;
+    height: 707px;
+}
+
+.section-title {
+    font-size:35px;
+    text-align:center;
+    text-transform:uppercase;
+    color: #000;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+
+}
+
+.ozdobnik {
+    display: inline-block;
+    width: 40px;
+    height: 4px;
+    background-color: var(--main-color);
+    margin: 20px;
+}
+
+.blog-articles {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 35px;
+}
+
+.blog-article__single {
+    width: 352px;
+    height:433px;
+    /*display:flex;*/
+    /*flex-direction: column;*/
+}
+
+.blog-article__photo {
+    width: 352px;
+    height: 234px;
+}
+
+.blog-article__title {
+    font-size: 19px;
+    color: #6A6A6A;
+    text-transform: uppercase;
+    text-align: left;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.blog-article__text {
+    font-size:14px;
+    color: #6A6A6A;
+    font-family:"Open Sans",sans-serif;
+    font-weight:300;
+    line-height: 20px;
+    margin-bottom:30px;
+    max-width: 260px;
+}
+
+.read-more__button {
+    width: 142px;
+    height: 40px;
+    box-shadow: 0px 3px 6px #FF00004D;
+    border-radius: 40px;
+    opacity: 1;
+    background-color:var(--main-color);
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:white;
+    padding: 11px 29px;
+}
+
+.service {
+    width:100%;
+    height:643px;
+    background-color:#28272C;
+}
+
+.section__service-title {
+    font-size:35px;
+    text-align:center;
+    text-transform:uppercase;
+    color: white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    padding-top: 60px;
+
+}
+
+.options {
+    display:flex;
+    justify-content: space-between;
+}
+
+.service__options {
+    width: 231px;
+    height: 361px;
+    margin-top:82px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*poprawic tytul i zrobic kolejne artykuly*/
+.options__photo{
+    width: 170px;
+    height: 170px;
+    border-radius:50%;
+}
+
+.options__title {
+    font-size: 18px;
+    color:white;
+    text-transform: uppercase;
+    text-align:left;
+    margin: 15px 0;
+}
+
+.option__text {
+    text-align: center;
+    font-size: 14px;
+    font-family:"Open Sans",sans-serif;
+    margin-bottom: 15px;
+    line-height: 20px;
+
+}
